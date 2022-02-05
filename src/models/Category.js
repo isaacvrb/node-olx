@@ -6,7 +6,7 @@ const modelSchema = new mongoose.Schema({
     slug: String
 });
 
-const modelName = 'Category',
+const modelName = 'Category';
 
 if(mongoose.connection && mongoose.connection.models[modelName]) {
     module.exports = mongoose.connection.models[modelName];

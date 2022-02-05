@@ -8,7 +8,7 @@ const apiRouters = require('./src/routers');
 
 mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
-    useFindAndModidy: false,
+    useFindAndModify: false,
     useUnifiedTopology: true
 });
 mongoose.Promise = global.Promise;
