@@ -6,11 +6,7 @@ const fileupload = require('express-fileupload');
 
 const apiRouters = require('./src/routers');
 
-mongoose.connect(process.env.DATABASE, {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-});
+mongoose.connect(process.env.DATABASE);
 mongoose.Promise = global.Promise;
 mongoose.connection.on('error', (error) => {
     console.log("Erro: ", error.message);
